@@ -1,0 +1,91 @@
+MEP Message Exchange Pattern(MEP)
+1) synchronous req/reply  - binding send/receive
+2) asynchronous req/reply - delay response
+3) one way invoke  - fire and forget
+
+
+jax-rpc supports 1 and 3
+jax-ws supports 1,2 and 3
+
+
+Message Exchangeing Format(MEF)
+
+style              use
+
+rpc  		encoded
+document	literal
+
+but they are 3 types of MEF 
+
+rpc-encoded(by dafault jax-rpc)
+
+rpc-literal
+
+document-literal(by default jax-ws)
+
+
+
+
+
+
+
+THE HOME GROUP PWD: Qy8xf1Fg5b
+
+
+jax-rpc SI Impl
+................
+
+SEInterfce(Service Endpoint Interface)
+
+- Interface getBook extends Remote
+   float getBookinfo() throws RemoteException
+
+
+REMOTEEXCEPTION:
+--------------
+
+RemoteExecption only having on provider side
+
+
+jax-rpc:
+-------
+contract last
+contract first
+
+provider
+--------
+
+ 
+consumer
+--------
+1)stub based
+2)dynamic proxy(dp)
+3)dynamic invocaton interface(dii)
+
+
+TYPES OF WebServices:
+
+---------------------
+soap
+----
+jax-rpc        wsdl 1.1
+
+jax-ws
+                    latest: wsdl 2.0
+
+non-soap
+--------    wadl/swager/raml
+jax-rs
+jax-ws
+
+similarities between jax-rpc and jax-ws:
+----------------------------------------
+
+
+
+
+
+differences between jax-rpcand jax-ws:
+--------------------------------------
+
+MSVCR71.dll

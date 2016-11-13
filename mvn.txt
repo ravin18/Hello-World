@@ -1,0 +1,38 @@
+/>mvn archetype:create "-DarchetypeGroupId=org.springframework.ws"
+ "-DarchetypeArtifactId=spring-ws-archetype" 
+
+"-DarchetypeVersion=2.1.4.RELEASE" 
+"-DgroupId=com.mycompany.hr" 
+"-DartifactId=holidayService"
+
+
+
+http://www.avajava.com/tutorials/lessons/what-are-the-phases-of-the-maven-default-lifecycle.html
+
+
+
+
+
+
+
+SEVERE: Servlet /FirstMvcWeb threw load() exception
+java.lang.ClassNotFoundException: org.springframework.web.servelt.DispatcherServlet
+
+
+
+
+sql developer: grant priviliges
+------------------------------
+
+I was googling about how to create a user and grant all privileges to him.
+
+I found these two methods :
+
+The first method :
+
+create user userName identified by password;
+grant connect to userName;
+grant all privileges to userName;
+The second method :
+
+grant connect , resource to userName identified by password;
